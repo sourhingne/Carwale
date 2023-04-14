@@ -7,7 +7,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUpMethod"/>
-          <include name="verifySearchResultForMarutiBrand"/>
+          <include name="verifySearchResultForTataBrand"/>
         </methods>
       </class> <!-- com.carwale23a.CarTests -->
     </classes>
