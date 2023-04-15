@@ -60,12 +60,14 @@ public class CarTests extends TestBase {
 
 		UIKeyword.scrollby();
 		NewCarsPage newcarpage = PageFactory.initElements(UIKeyword.driver, NewCarsPage.class);
-		UIKeyword.waitForElementToBePresent(newcarpage.Toyota);newcarpage.clickOnToyota();
+		UIKeyword.waitForElementToBePresent(newcarpage.Toyota);
+		newcarpage.clickOnToyota();
 		AllBrandsCarPage maruticarpage = PageFactory.initElements(UIKeyword.driver, AllBrandsCarPage.class);
 		maruticarpage.getTextFromToyota();
 
 	}
-     @Test
+
+	@Test
 	public void verifySearchResultForKiaBrand() {
 		UIKeyword.launchUrl(Environment.URL);
 		Homepage home = PageFactory.initElements(UIKeyword.driver, Homepage.class);
@@ -74,7 +76,8 @@ public class CarTests extends TestBase {
 
 		UIKeyword.scrollby();
 		NewCarsPage newcarpage = PageFactory.initElements(UIKeyword.driver, NewCarsPage.class);
-		UIKeyword.waitForElementToBePresent(newcarpage.Kia);newcarpage.clickOnKia();
+		UIKeyword.waitForElementToBePresent(newcarpage.Kia);
+		newcarpage.clickOnKia();
 		AllBrandsCarPage maruticarpage = PageFactory.initElements(UIKeyword.driver, AllBrandsCarPage.class);
 		maruticarpage.getTextFromKia();
 
