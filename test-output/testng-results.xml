@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
+<testng-results ignored="2" total="3" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-14T22:17:44 IST" name="Default suite" finished-at="2023-04-14T22:17:52 IST" duration-ms="8688">
+  <suite started-at="2023-04-15T11:32:39 IST" name="Default suite" finished-at="2023-04-15T11:32:46 IST" duration-ms="7031">
     <groups>
     </groups>
-    <test started-at="2023-04-14T22:17:44 IST" name="Default test" finished-at="2023-04-14T22:17:52 IST" duration-ms="8688">
+    <test started-at="2023-04-15T11:32:39 IST" name="Default test" finished-at="2023-04-15T11:32:46 IST" duration-ms="7031">
       <class name="com.carwale23a.CarTests">
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.carwale23a.CarTests@368247b9]" started-at="2023-04-14T22:17:44 IST" name="setUpMethod" finished-at="2023-04-14T22:17:50 IST" duration-ms="6081" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.carwale23a.CarTests@1a6d8329]" started-at="2023-04-15T11:32:39 IST" name="setUpMethod" finished-at="2023-04-15T11:32:44 IST" duration-ms="5450" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="verifySearchResultForTataBrand()[pri:0, instance:com.carwale23a.CarTests@368247b9]" started-at="2023-04-14T22:17:50 IST" name="verifySearchResultForTataBrand" finished-at="2023-04-14T22:17:52 IST" duration-ms="2059" status="FAIL">
+        <test-method signature="verifySearchResultForHyundaiBrand()[pri:0, instance:com.carwale23a.CarTests@1a6d8329]" started-at="2023-04-15T11:32:44 IST" name="verifySearchResultForHyundaiBrand" finished-at="2023-04-15T11:32:46 IST" duration-ms="1395" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"ul > li.o-fzoHAP > div > div > div > a > h3"}
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"ul>li.o-fzoHAP>div>div>div>a>h3"}
   (Session info: chrome=112.0.5615.86)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.8.1', revision: '8ebccac989'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f0f5968d7f384b2738a30cca564068a8, findElement {using=css selector, value=ul > li.o-fzoHAP > div > div > div > a > h3}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.86, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54066}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54066/devtoo..., se:cdpVersion: 112.0.5615.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f0f5968d7f384b2738a30cca564068a8]]>
+Command: [84f1f39ffd8f25d63740cf128fc6cf90, findElement {using=css selector, value=ul>li.o-fzoHAP>div>div>div>a>h3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.86, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51271}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51271/devtoo..., se:cdpVersion: 112.0.5615.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 84f1f39ffd8f25d63740cf128fc6cf90]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"ul > li.o-fzoHAP > div > div > div > a > h3"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"ul>li.o-fzoHAP>div>div>div>a>h3"}
   (Session info: chrome=112.0.5615.86)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.8.1', revision: '8ebccac989'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f0f5968d7f384b2738a30cca564068a8, findElement {using=css selector, value=ul > li.o-fzoHAP > div > div > div > a > h3}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.86, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54066}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54066/devtoo..., se:cdpVersion: 112.0.5615.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f0f5968d7f384b2738a30cca564068a8
+Command: [84f1f39ffd8f25d63740cf128fc6cf90, findElement {using=css selector, value=ul>li.o-fzoHAP>div>div>div>a>h3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.86, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51271}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51271/devtoo..., se:cdpVersion: 112.0.5615.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 84f1f39ffd8f25d63740cf128fc6cf90
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -54,8 +54,8 @@ at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(Def
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
 at com.carwale23a.keywords.UIKeyword.clickOn(UIKeyword.java:121)
-at com.carwale23a.pages.NewCarsPage.clickOntata(NewCarsPage.java:21)
-at com.carwale23a.CarTests.verifySearchResultForTataBrand(CarTests.java:47)
+at com.carwale23a.pages.NewCarsPage.clickOnHyundai(NewCarsPage.java:34)
+at com.carwale23a.CarTests.verifySearchResultForHyundaiBrand(CarTests.java:64)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -89,8 +89,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySearchResultForTataBrand -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.carwale23a.CarTests@368247b9]" started-at="2023-04-14T22:17:52 IST" name="tearDown" finished-at="2023-04-14T22:17:52 IST" duration-ms="433" status="PASS">
+        </test-method> <!-- verifySearchResultForHyundaiBrand -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.carwale23a.CarTests@1a6d8329]" started-at="2023-04-15T11:32:46 IST" name="tearDown" finished-at="2023-04-15T11:32:46 IST" duration-ms="141" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

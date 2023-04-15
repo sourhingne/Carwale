@@ -44,11 +44,29 @@ public class CarTests extends TestBase {
 		UIKeyword.scrollby();
 		NewCarsPage newcarpage = PageFactory.initElements(UIKeyword.driver, NewCarsPage.class);
 		UIKeyword.waitForElementToBePresent(newcarpage.Tata);
-		newcarpage.clickOntata();
+		newcarpage.clickOnTata();
 		MarutiCarPage maruticarpage = PageFactory.initElements(UIKeyword.driver, MarutiCarPage.class);
 		maruticarpage.getTextFromTata();
 
 
 	}
+	@Test
+	public void verifySearchResultForHyundaiBrand() {
+		
+		UIKeyword.launchUrl(Environment.URL);
+		Homepage home = PageFactory.initElements(UIKeyword.driver, Homepage.class);
+		home.hoverOnNewCar();
+		home.clickOnfindNewCars();
+
+		UIKeyword.scrollby();
+		NewCarsPage newcarpage = PageFactory.initElements(UIKeyword.driver, NewCarsPage.class);
+		UIKeyword.waitForElementToBePresent(newcarpage.Hyuandai);
+		newcarpage.clickOnHyundai();
+		MarutiCarPage maruticarpage = PageFactory.initElements(UIKeyword.driver, MarutiCarPage.class);
+		maruticarpage.getTextFromHyundai();
+
+
+	}
+
 }
 
