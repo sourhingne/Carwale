@@ -5,9 +5,9 @@
     <classes>
       <class name="com.carwale23a.CarTests">
         <methods>
-          <include name="tearDown"/>
           <include name="setUpMethod"/>
-          <include name="verifySearchResultForToyotaBrand"/>
+          <include name="tearDown"/>
+          <include name="verifySearchResultForMercedesBrand"/>
         </methods>
       </class> <!-- com.carwale23a.CarTests -->
     </classes>
