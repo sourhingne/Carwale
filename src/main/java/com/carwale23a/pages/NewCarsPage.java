@@ -19,6 +19,15 @@ public class NewCarsPage extends TestBase {
 	@FindBy(css = " div > ul > li:nth-child(6) a > div.o-cohPRA.o-cohQay.UaZtoi > div > img")
 	public WebElement Kia;
 
+	@FindBy(css = "li:nth-child(9 a > div.o-cpNAVm.o-byFsZJ.o-eemiLE.o-fzpihx")
+	public WebElement MG;
+	
+	@FindBy(css = "#root > div ul > li:nth-child(10) > a > div.o-cpNAVm.o-byFsZJ.o-eemiLE.o-fzpihx")
+	public WebElement Honda;
+
+	@FindBy(css = "  ul > li:nth-child(11) > a > div.o-cpNAVm.o-byFsZJ.o-eemiLE.o-fzpihx")
+	public WebElement Volkswagen;
+	
 	public void clickOnMarutiSuzuki() {
 		UIKeyword.clickOn(marutiSuzuki);
 	}
@@ -52,5 +61,29 @@ public class NewCarsPage extends TestBase {
 		UIKeyword.mousemove(Kia);
 
 	}
+
+	public void clickOnMG() {
+		UIKeyword.clickOn(MG);
+	}
+
+	public void hoverOnMG() {
+		UIKeyword.mousemove(MG);
+
+	}
+
+	public void clickOnHonda() {
+		UIKeyword.clickOn(Honda);
+	}
+
+	public void hoverOnHonda() {
+		UIKeyword.mousemove(Honda);
+	}
+
+	public void clickOnVolkswagen() {
+		UIKeyword.clickOn(Volkswagen);
+	}
+	public void hoverOnVolkswagen() {
+		UIKeyword.mousemove(Volkswagen);
+}
 
 }
