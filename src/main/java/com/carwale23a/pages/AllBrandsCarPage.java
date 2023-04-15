@@ -12,8 +12,17 @@ import com.carwale23a.keywords.UIKeyword;
 public class AllBrandsCarPage extends TestBase {
 	@FindBy(css = "ul>li.o-fzoHAP>div>div>div>a>h3")
 	public List<WebElement> marutiSuzukiBrezzaElement;
+	
 	@FindBy(css = "li:nth-child(2) > a > div.o-cohPRA.o-cohQay.UaZtoi > div > img")
 	public List<WebElement> Tata;
+	
+	@FindBy(css=  "ul>li.o-fzoHAP div>div>div>a>h3")
+	public List<WebElement> Toyota;
+	
+	
+	@FindBy(css="ul>li.o-fzoHAP>div>div>div>a>h3")
+	public List<WebElement> Kia;
+	
 	
 
 	public void getTextFromMarutiSuzukiBrezza() {
@@ -32,4 +41,27 @@ public class AllBrandsCarPage extends TestBase {
 		}
 	}
 
+	public void getTextFromToyota() {
+		List<String> cars = UIKeyword.getTexts(Toyota);
+		for (String car : cars) {
+			Assert.assertTrue(car.contains("Toyota"), "car title doesn't contains  Toyota:" + car);
+
+		}
+	}
+
+	public void getTextFromKia() {
+		List<String> cars = UIKeyword.getTexts(Kia);
+		for (String car : cars) {
+			Assert.assertTrue(car.contains("Kia"), "car title doesn't contains  Kia:" + car);
+
+		}
+	
+	}
+	
+	
+	
+	
+	
+	
+	
 }

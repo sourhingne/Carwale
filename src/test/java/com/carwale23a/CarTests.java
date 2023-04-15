@@ -7,8 +7,8 @@ import org.testng.annotations.Test;
 
 import com.carwale23a.config.TestBase;
 import com.carwale23a.keywords.UIKeyword;
+import com.carwale23a.pages.AllBrandsCarPage;
 import com.carwale23a.pages.Homepage;
-import com.carwale23a.pages.MarutiCarPage;
 import com.carwale23a.pages.NewCarsPage;
 import com.carwale23a.util.Environment;
 
@@ -28,13 +28,14 @@ public class CarTests extends TestBase {
 		UIKeyword.waitForElementToBePresent(newcarpage.marutiSuzuki);
 		newcarpage.clickOnMarutiSuzuki();
 
-		MarutiCarPage maruticarpage = PageFactory.initElements(UIKeyword.driver, MarutiCarPage.class);
+		AllBrandsCarPage maruticarpage = PageFactory.initElements(UIKeyword.driver, AllBrandsCarPage.class);
 		maruticarpage.getTextFromMarutiSuzukiBrezza();
 
 	}
+
 	@Test
 	public void verifySearchResultForTataBrand() {
-	
+
 		UIKeyword.launchUrl(Environment.URL);
 		Homepage home = PageFactory.initElements(UIKeyword.driver, Homepage.class);
 		home.hoverOnNewCar();
@@ -44,10 +45,40 @@ public class CarTests extends TestBase {
 		NewCarsPage newcarpage = PageFactory.initElements(UIKeyword.driver, NewCarsPage.class);
 		UIKeyword.waitForElementToBePresent(newcarpage.Tata);
 		newcarpage.clickOntata();
-		MarutiCarPage maruticarpage = PageFactory.initElements(UIKeyword.driver, MarutiCarPage.class);
+		AllBrandsCarPage maruticarpage = PageFactory.initElements(UIKeyword.driver, AllBrandsCarPage.class);
 		maruticarpage.getTextFromTata();
 
+	}
+
+	@Test
+	public void verifySearchResultForToyotaBrand() {
+
+		UIKeyword.launchUrl(Environment.URL);
+		Homepage home = PageFactory.initElements(UIKeyword.driver, Homepage.class);
+		home.hoverOnNewCar();
+		home.clickOnfindNewCars();
+
+		UIKeyword.scrollby();
+		NewCarsPage newcarpage = PageFactory.initElements(UIKeyword.driver, NewCarsPage.class);
+		UIKeyword.waitForElementToBePresent(newcarpage.Toyota);
+		newcarpage.clickOnToyota();
+		AllBrandsCarPage maruticarpage = PageFactory.initElements(UIKeyword.driver, AllBrandsCarPage.class);
+		maruticarpage.getTextFromToyota();
+
+	}
+     @Test
+	public void verifySearchResultForKiaBrand() {
+		UIKeyword.launchUrl(Environment.URL);
+		Homepage home = PageFactory.initElements(UIKeyword.driver, Homepage.class);
+		home.hoverOnNewCar();
+		home.clickOnfindNewCars();
+
+		UIKeyword.scrollby();
+		NewCarsPage newcarpage = PageFactory.initElements(UIKeyword.driver, NewCarsPage.class);
+		UIKeyword.waitForElementToBePresent(newcarpage.Kia);
+		newcarpage.clickOnKia();
+		AllBrandsCarPage maruticarpage = PageFactory.initElements(UIKeyword.driver, AllBrandsCarPage.class);
+		maruticarpage.getTextFromKia();
 
 	}
 }
-
