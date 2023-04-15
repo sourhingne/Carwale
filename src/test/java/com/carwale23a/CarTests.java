@@ -66,7 +66,8 @@ public class CarTests extends TestBase {
 		maruticarpage.getTextFromToyota();
 
 	}
-     @Test
+
+	@Test
 	public void verifySearchResultForKiaBrand() {
 		UIKeyword.launchUrl(Environment.URL);
 		Homepage home = PageFactory.initElements(UIKeyword.driver, Homepage.class);
@@ -80,5 +81,32 @@ public class CarTests extends TestBase {
 		AllBrandsCarPage maruticarpage = PageFactory.initElements(UIKeyword.driver, AllBrandsCarPage.class);
 		maruticarpage.getTextFromKia();
 
+	}
+
+	public void verifySearchResultForMGBrand() {
+		UIKeyword.launchUrl(Environment.URL);
+		Homepage home = PageFactory.initElements(UIKeyword.driver, Homepage.class);
+		home.hoverOnNewCar();
+		home.clickOnfindNewCars();
+
+		UIKeyword.scrollby();
+		NewCarsPage newcarpage = PageFactory.initElements(UIKeyword.driver, NewCarsPage.class);
+		UIKeyword.waitForElementToBePresent(newcarpage.MG);
+		newcarpage.clickOnMG();
+		AllBrandsCarPage maruticarpage = PageFactory.initElements(UIKeyword.driver, AllBrandsCarPage.class);
+		maruticarpage.getTextFromMG();
+	}
+	public void verifySearchResultForHondaBrand() {
+		UIKeyword.launchUrl(Environment.URL);
+		Homepage home = PageFactory.initElements(UIKeyword.driver, Homepage.class);
+		home.hoverOnNewCar();
+		home.clickOnfindNewCars();
+
+		UIKeyword.scrollby();
+		NewCarsPage newcarpage = PageFactory.initElements(UIKeyword.driver, NewCarsPage.class);
+		UIKeyword.waitForElementToBePresent(newcarpage.Honda);
+		newcarpage.clickOnHonda();
+		AllBrandsCarPage maruticarpage = PageFactory.initElements(UIKeyword.driver, AllBrandsCarPage.class);
+		maruticarpage.getTextFromHonda();
 	}
 }

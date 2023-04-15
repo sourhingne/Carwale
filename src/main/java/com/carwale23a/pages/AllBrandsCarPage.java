@@ -12,18 +12,26 @@ import com.carwale23a.keywords.UIKeyword;
 public class AllBrandsCarPage extends TestBase {
 	@FindBy(css = "ul>li.o-fzoHAP>div>div>div>a>h3")
 	public List<WebElement> marutiSuzukiBrezzaElement;
-	
+
 	@FindBy(css = "li:nth-child(2) > a > div.o-cohPRA.o-cohQay.UaZtoi > div > img")
 	public List<WebElement> Tata;
-	
-	@FindBy(css=  "ul>li.o-fzoHAP div>div>div>a>h3")
+
+	@FindBy(css = "ul>li.o-fzoHAP div>div>div>a>h3")
 	public List<WebElement> Toyota;
-	
-	
-	@FindBy(css="ul>li.o-fzoHAP>div>div>div>a>h3")
+
+	@FindBy(css = "ul>li.o-fzoHAP>div>div>div>a>h3")
 	public List<WebElement> Kia;
+
+	@FindBy(css = " div.aGK5Mk.o-fpkJwH.o-dCyDMp.o-fzovSM > ul > li.o-fzoHAP > div > div > div > a > h3")
+	public List<WebElement> MG;
 	
 	
+	@FindBy(css = "  ul > li.o-fzoHAP > div > div > div > a > h3")
+	public List<WebElement> Honda;
+	
+	
+	@FindBy(css = "ul > li.o-fzoHAP > div > div > div > a > h3")
+	public List<WebElement> Volkswagen;
 
 	public void getTextFromMarutiSuzukiBrezza() {
 		List<String> cars = UIKeyword.getTexts(marutiSuzukiBrezzaElement);
@@ -55,13 +63,31 @@ public class AllBrandsCarPage extends TestBase {
 			Assert.assertTrue(car.contains("Kia"), "car title doesn't contains  Kia:" + car);
 
 		}
-	
+
 	}
-	
-	
-	
-	
-	
-	
-	
+
+	public void getTextFromMG() {
+		List<String> cars = UIKeyword.getTexts(MG);
+		for (String car : cars) {
+			Assert.assertTrue(car.contains("MG"), "car title doesn't contains  MG:" + car);
+
+		}
+
+	}
+
+	public void getTextFromHonda() {
+		List<String> cars = UIKeyword.getTexts(Honda);
+		for (String car : cars) {
+			Assert.assertTrue(car.contains("Honda"), "car title doesn't contains  MG:" + car);
+
+	}
+}
+
+	public void getTextFromVolkswagen() {
+		List<String> cars = UIKeyword.getTexts(Volkswagen);
+		for (String car : cars) {
+			Assert.assertTrue(car.contains("Volkswagen"), "car title doesn't contains  MG:" + car);
+
+	}
+}
 }
