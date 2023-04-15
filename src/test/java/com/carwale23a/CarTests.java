@@ -2,7 +2,6 @@ package com.carwale23a;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 

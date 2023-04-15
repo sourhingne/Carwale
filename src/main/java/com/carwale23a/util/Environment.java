@@ -1,7 +1,5 @@
 package com.carwale23a.util;
 
-import java.io.IOException;
-
 public class Environment {
 	private static String filepath = "\\src\\main\\resources\\Environment.properties";
 	public static String URL;
