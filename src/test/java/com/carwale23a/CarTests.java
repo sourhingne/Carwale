@@ -60,8 +60,7 @@ public class CarTests extends TestBase {
 
 		UIKeyword.scrollby();
 		NewCarsPage newcarpage = PageFactory.initElements(UIKeyword.driver, NewCarsPage.class);
-		UIKeyword.waitForElementToBePresent(newcarpage.Toyota);
-		newcarpage.clickOnToyota();
+		UIKeyword.waitForElementToBePresent(newcarpage.Toyota);newcarpage.clickOnToyota();
 		AllBrandsCarPage maruticarpage = PageFactory.initElements(UIKeyword.driver, AllBrandsCarPage.class);
 		maruticarpage.getTextFromToyota();
 
@@ -75,8 +74,7 @@ public class CarTests extends TestBase {
 
 		UIKeyword.scrollby();
 		NewCarsPage newcarpage = PageFactory.initElements(UIKeyword.driver, NewCarsPage.class);
-		UIKeyword.waitForElementToBePresent(newcarpage.Kia);
-		newcarpage.clickOnKia();
+		UIKeyword.waitForElementToBePresent(newcarpage.Kia);newcarpage.clickOnKia();
 		AllBrandsCarPage maruticarpage = PageFactory.initElements(UIKeyword.driver, AllBrandsCarPage.class);
 		maruticarpage.getTextFromKia();
 
