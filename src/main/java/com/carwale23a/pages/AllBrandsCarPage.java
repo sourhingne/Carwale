@@ -9,7 +9,7 @@ import org.testng.Assert;
 import com.carwale23a.config.TestBase;
 import com.carwale23a.keywords.UIKeyword;
 
-public class MarutiCarPage extends TestBase {
+public class AllBrandsCarPage extends TestBase {
 	@FindBy(css = "ul>li.o-fzoHAP>div>div>div>a>h3")
 	public List<WebElement> marutiSuzukiBrezzaElement;
 	@FindBy(css = "li:nth-child(2) > a > div.o-cohPRA.o-cohQay.UaZtoi > div > img")
