@@ -138,8 +138,11 @@ public class CarTests extends TestBase {
 		newcarpage.clickOnKia();
 		AllBrandsCarPage maruticarpage = new AllBrandsCarPage();
 		maruticarpage.getTextFromKia();
-
 	}
+		
+		
+		
+		
 @Test
 	public void verifySearchResultForMGBrand() {
 		UIKeyword.launchUrl(Environment.URL);
