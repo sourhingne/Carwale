@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Apr 15 11:32:39 IST 2023</td>
+<td>Started on:</td><td>Sat Apr 15 13:29:08 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>7 seconds (7031 ms)</td>
+<tr><td>Total time:</td><td>6 seconds (6798 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.carwale23a.CarTests.verifySearchResultForHyundaiBrand()'><b>verifySearchResultForHyundaiBrand</b><br>Test class: com.carwale23a.CarTests</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;ul&gt;li.o-fzoHAP&gt;div&gt;div&gt;div&gt;a&gt;h3&quot;}
+<td title='com.carwale23a.CarTests.verifySearchResultForBMWBrand()'><b>verifySearchResultForBMWBrand</b><br>Test class: com.carwale23a.CarTests</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;li:nth-child(7)&gt;a&gt;div.o-cohPRA.o-cohQay.UaZtoi&gt;div&gt;img&quot;}
   (Session info: chrome=112.0.5615.86)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [84f1f39ffd8f25d63740cf128fc6cf90, findElement {using=css selector, value=ul&gt;li.o-fzoHAP&gt;div&gt;div&gt;div&gt;a&gt;h3}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.86, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51271}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51271/devtoo..., se:cdpVersion: 112.0.5615.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 84f1f39ffd8f25d63740cf128fc6cf90
+Command: [8eba6156d4abec5e90629e00526a08f7, findElement {using=css selector, value=li:nth-child(7)&gt;a&gt;div.o-cohPRA.o-cohQay.UaZtoi&gt;div&gt;img}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.86, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:55198}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55198/devtoo..., se:cdpVersion: 112.0.5615.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8eba6156d4abec5e90629e00526a08f7
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -106,8 +106,8 @@ Session ID: 84f1f39ffd8f25d63740cf128fc6cf90
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
 	at com.carwale23a.keywords.UIKeyword.clickOn(UIKeyword.java:121)
-	at com.carwale23a.pages.NewCarsPage.clickOnHyundai(NewCarsPage.java:34)
-	at com.carwale23a.CarTests.verifySearchResultForHyundaiBrand(CarTests.java:64)
+	at com.carwale23a.pages.NewCarsPage.clickOnBMW(NewCarsPage.java:53)
+	at com.carwale23a.CarTests.verifySearchResultForBMWBrand(CarTests.java:98)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -136,16 +136,16 @@ Session ID: 84f1f39ffd8f25d63740cf128fc6cf90
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1875532039", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1875532039'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;ul&gt;li.o-fzoHAP&gt;div&gt;div&gt;div&gt;a&gt;h3&quot;}
+</pre></div><a href='#' onClick='toggleBox("stack-trace2079051109", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2079051109'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;li:nth-child(7)&gt;a&gt;div.o-cohPRA.o-cohQay.UaZtoi&gt;div&gt;img&quot;}
   (Session info: chrome=112.0.5615.86)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [84f1f39ffd8f25d63740cf128fc6cf90, findElement {using=css selector, value=ul&gt;li.o-fzoHAP&gt;div&gt;div&gt;div&gt;a&gt;h3}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.86, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51271}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51271/devtoo..., se:cdpVersion: 112.0.5615.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 84f1f39ffd8f25d63740cf128fc6cf90
+Command: [8eba6156d4abec5e90629e00526a08f7, findElement {using=css selector, value=li:nth-child(7)&gt;a&gt;div.o-cohPRA.o-cohQay.UaZtoi&gt;div&gt;img}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.86, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:55198}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55198/devtoo..., se:cdpVersion: 112.0.5615.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8eba6156d4abec5e90629e00526a08f7
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -166,8 +166,8 @@ Session ID: 84f1f39ffd8f25d63740cf128fc6cf90
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
 	at com.carwale23a.keywords.UIKeyword.clickOn(UIKeyword.java:121)
-	at com.carwale23a.pages.NewCarsPage.clickOnHyundai(NewCarsPage.java:34)
-	at com.carwale23a.CarTests.verifySearchResultForHyundaiBrand(CarTests.java:64)
+	at com.carwale23a.pages.NewCarsPage.clickOnBMW(NewCarsPage.java:53)
+	at com.carwale23a.CarTests.verifySearchResultForBMWBrand(CarTests.java:98)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -198,7 +198,7 @@ Session ID: 84f1f39ffd8f25d63740cf128fc6cf90
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>1</td>
-<td>com.carwale23a.CarTests@1a6d8329</td></tr>
+<td>com.carwale23a.CarTests@55a147cc</td></tr>
 </table><p>
 </body>
 </html>

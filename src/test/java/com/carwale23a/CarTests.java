@@ -51,7 +51,24 @@ public class CarTests extends TestBase {
 
 	}
 	@Test
-	public void verifySearchResultForHyundaiBrand() {
+	public void verifySearchResultForMahindraBrand() {
+		
+		UIKeyword.launchUrl(Environment.URL);
+		Homepage home = PageFactory.initElements(UIKeyword.driver, Homepage.class);
+		home.hoverOnNewCar();
+		home.clickOnfindNewCars();
+
+		UIKeyword.scrollby();
+		NewCarsPage newcarpage = PageFactory.initElements(UIKeyword.driver, NewCarsPage.class);
+		UIKeyword.waitForElementToBePresent(newcarpage.Mahindra);
+		newcarpage.clickOnMahindra();
+		MarutiCarPage maruticarpage = PageFactory.initElements(UIKeyword.driver, MarutiCarPage.class);
+		maruticarpage.getTextFromMahindra();
+
+
+	}
+@Test
+public void verifySearchResultForHyundaiBrand() {
 		
 		UIKeyword.launchUrl(Environment.URL);
 		Homepage home = PageFactory.initElements(UIKeyword.driver, Homepage.class);
@@ -67,6 +84,42 @@ public class CarTests extends TestBase {
 
 
 	}
+@Test
+public void verifySearchResultForBMWBrand() {
+	
+	UIKeyword.launchUrl(Environment.URL);
+	Homepage home = PageFactory.initElements(UIKeyword.driver, Homepage.class);
+	home.hoverOnNewCar();
+	home.clickOnfindNewCars();
+
+	UIKeyword.scrollby();
+	NewCarsPage newcarpage = PageFactory.initElements(UIKeyword.driver, NewCarsPage.class);
+	UIKeyword.waitForElementToBePresent(newcarpage.BMW);
+	newcarpage.clickOnBMW();
+	MarutiCarPage maruticarpage = PageFactory.initElements(UIKeyword.driver, MarutiCarPage.class);
+	maruticarpage.getTextFromBMW();
+
+
+}
+@Test
+public void verifySearchResultForMercedesBrand() {
+	
+	UIKeyword.launchUrl(Environment.URL);
+	Homepage home = PageFactory.initElements(UIKeyword.driver, Homepage.class);
+	home.hoverOnNewCar();
+	home.clickOnfindNewCars();
+
+	UIKeyword.scrollby();
+	NewCarsPage newcarpage = PageFactory.initElements(UIKeyword.driver, NewCarsPage.class);
+	UIKeyword.waitForElementToBePresent(newcarpage.Mercedes);
+	newcarpage.clickOnMercedes();
+	MarutiCarPage maruticarpage = PageFactory.initElements(UIKeyword.driver, MarutiCarPage.class);
+	maruticarpage.getTextFromMercedes();
+
+
+}
+
+
 
 }
 

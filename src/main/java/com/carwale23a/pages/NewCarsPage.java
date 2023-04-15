@@ -13,6 +13,13 @@ public class NewCarsPage extends TestBase {
 	public WebElement Tata;
 	@FindBy(css = "li:nth-child(3)>a>div.o-cohPRA.o-cohQay.UaZtoi>div>img")
 	public WebElement Hyuandai;
+	@FindBy(css = "li:nth-child(4)>a>div.o-cohPRA.o-cohQay.UaZtoi>div>img")
+	public WebElement Mahindra;
+	@FindBy(css = "li:nth-child(7)>a>div.o-cohPRA.o-cohQay.UaZtoi>div>img")
+	public WebElement BMW;
+	@FindBy(css = " li:nth-child(8)>a>div.o-cohPRA.o-cohQay.UaZtoi>div>img")
+	public WebElement Mercedes;
+	
 
 	public void clickOnMarutiSuzuki() {
 		UIKeyword.clickOn(marutiSuzuki);
@@ -37,4 +44,28 @@ public class NewCarsPage extends TestBase {
 	public void hoverOnHundai() {
 		UIKeyword.mousemove(Hyuandai);
 	}
+	public void clickOnMahindra() {
+		UIKeyword.clickOn(Mahindra);
+	}
+
+	public void hoverOnMahindra() {
+		UIKeyword.mousemove(Mahindra);
+	}
+	public void clickOnBMW() {
+		UIKeyword.clickOn(BMW);
+	}
+
+	public void hoverOnBMW() {
+		UIKeyword.mousemove(BMW);
+	}
+
+	public void clickOnMercedes() {
+		UIKeyword.clickOn(BMW);
+	}
+
+	public void hoverOnMercedes() {
+		UIKeyword.mousemove(BMW);
+	}
+
 }
+

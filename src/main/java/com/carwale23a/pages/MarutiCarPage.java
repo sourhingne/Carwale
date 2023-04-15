@@ -19,6 +19,10 @@ public class MarutiCarPage extends TestBase {
 
 	@FindBy(css = "li:nth-child(4)>a>div.o-cpNAVm.o-byFsZJ.o-eemiLE.o-fzpihx")
 	public List<WebElement> Mahindra;
+	@FindBy(css = "li.o-fzoHAP>div>div>div>a>h3")
+	public List<WebElement> BMW;
+	@FindBy(css = " ul>li.o-fzoHAP>div>div>div>a>h3")
+	public List<WebElement>Mercedes ;
 
 	public void getTextFromMarutiSuzukiBrezza() {
 		List<String> cars = UIKeyword.getTexts(marutiSuzukiBrezzaElement);
@@ -43,10 +47,26 @@ public class MarutiCarPage extends TestBase {
 
 		}
 	}
+
 	public void getTextFromMahindra() {
 		List<String> cars = UIKeyword.getTexts(Mahindra);
 		for (String car : cars) {
 			Assert.assertTrue(car.contains("Mahindra"), "car title doesn't contains  Mahindra:" + car);
+
+		}
+	}
+
+	public void getTextFromBMW() {
+		List<String> cars = UIKeyword.getTexts(BMW);
+		for (String car : cars) {
+			Assert.assertTrue(car.contains("BMW"), "car title doesn't contains  BMW:" + car);
+
+		}
+	}
+	public void getTextFromMercedes() {
+		List<String> cars = UIKeyword.getTexts(Mercedes);
+		for (String car : cars) {
+			Assert.assertTrue(car.contains("Mercedes"), "car title doesn't contains  Mercedes:" + car);
 
 		}
 	}
