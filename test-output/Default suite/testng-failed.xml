@@ -5,9 +5,17 @@
     <classes>
       <class name="com.carwale23a.CarTests">
         <methods>
+          <include name="verifySearchResultForTataBrand"/>
+          <include name="verifySearchResultForBMWBrand"/>
+          <include name="verifySearchResultForToyotaBrand"/>
+          <include name="verifySearchResultForMGBrand"/>
           <include name="setUpMethod"/>
-          <include name="tearDown"/>
+          <include name="verifySearchResultForMahindraBrand"/>
+          <include name="verifySearchResultForMarutiBrand"/>
           <include name="verifySearchResultForMercedesBrand"/>
+          <include name="verifySearchResultForHondaBrand"/>
+          <include name="verifySearchResultForHyundaiBrand"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.carwale23a.CarTests -->
     </classes>

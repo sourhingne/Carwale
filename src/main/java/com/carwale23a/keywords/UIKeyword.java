@@ -4,6 +4,8 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
+
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,6 +19,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 
 public class UIKeyword {
+	
+	private static final Logger log=Logger.getLogger(UIKeyword.class);
 
 	public static RemoteWebDriver driver;
 	public static FluentWait<WebDriver> wait;
@@ -48,7 +52,7 @@ public class UIKeyword {
 	public static void launchUrl(String url) {
 		driver.get(url);
 		driver.manage().window().maximize();
-		System.out.println("url is launched Successfully" + url);
+		log.info("url is launched Successfully" + url);
 	}
 
 	public static void clickOn(By cssSelector) {
@@ -140,7 +144,7 @@ public class UIKeyword {
 
 	public static void closeBrowser() {
 		driver.close();
-		System.out.println("Browser Has Been closed successfully");
+		log.info("Browser Has Been closed successfully");
 	}
 
 }

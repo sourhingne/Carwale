@@ -12,32 +12,32 @@ public class NewCarsPage extends TestBase {
 		PageFactory.initElements(UIKeyword.driver, this);
 	}
 
-	@FindBy(css = "a>div.o-cohPRA.o-cohQay.UaZtoi>div>img")
+	@FindBy(css = "a[href=\"/maruti-suzuki-cars/\"]")
 	public WebElement marutiSuzuki;
-	@FindBy(css = "ul>li.o-fzoHAP>div>div>div>a>h3")
+	@FindBy(css = "img[title='Tata']")
 	public WebElement Tata;
-	@FindBy(css = "li:nth-child(3)>a>div.o-cohPRA.o-cohQay.UaZtoi>div>img")
+	@FindBy(css = "a[title=\"Hyundai\"]")
 	public WebElement Hyuandai;
-	@FindBy(css = "li:nth-child(4)>a>div.o-cohPRA.o-cohQay.UaZtoi>div>img")
+	@FindBy(css = "img[alt=\"Mahindra\"]")
 	public WebElement Mahindra;
-	@FindBy(css = "li:nth-child(7)>a>div.o-cohPRA.o-cohQay.UaZtoi>div>img")
+	@FindBy(css = "a[href=\"/bmw-cars/\"]")
 	public WebElement BMW;
-	@FindBy(css = " li:nth-child(8)>a>div.o-cohPRA.o-cohQay.UaZtoi>div>img")
+	@FindBy(css = "a[href=\"/mercedes-benz-cars/\"]")
 	public WebElement Mercedes;
 
-	@FindBy(css = "div>ul>li:nth-child(5)>a>div.o-cpNAVm.o-byFsZJ.o-eemiLE.o-fzpihx")
+	@FindBy(css = "a[title=\"Toyota\"]")
 	public WebElement Toyota;
 
-	@FindBy(css = " div >ul>li:nth-child(6)a> div.o-cohPRA.o-cohQay.UaZtoi>div>img")
+	@FindBy(css = " a[href=\"/kia-cars/\"]")
 	public WebElement Kia;
 
-	@FindBy(css = "li:nth-child(9)>a>div.o-cpNAVm.o-byFsZJ.o-eemiLE.o-fzpihx")
+	@FindBy(css = "a[href=\"/mg-cars/\"]")
 	public WebElement MG;
 
-	@FindBy(css = "a>div.o-cpNAVm.o-byFsZJ.o-eemiLE.o-fzpihx")
+	@FindBy(css = "a[href=\"/honda-cars/\"]")
 	public WebElement Honda;
 
-	@FindBy(css = "ul>li:nth-child(11)>a>div.o-cpNAVm.o-byFsZJ.o-eemiLE.o-fzpihx")
+	@FindBy(css = "a[href=\"/volkswagen-cars/\"]")
 	public WebElement Volkswagen;
 
 	public void clickOnMarutiSuzuki() {
